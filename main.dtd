@@ -1,0 +1,55 @@
+<!DOCTYPE catalogue [
+    <!ELEMENT catalogue (company+)>
+
+    <!ELEMENT company (companyName, address, contacts, UID, description?, image?)>
+    <!ATTLIST company company_ID ID #REQUIRED>
+    <!ATTLIST company region_Ref IDREF #IMPLIED>
+    <!ATTLIST company sector_Ref IDREF #IMPLIED>
+
+    <!ELEMENT companyName (#PCDATA)>
+
+    <!ELEMENT address (city, street?)>
+    <!ELEMENT city (#PCDATA)>
+    <!ELEMENT street (#PCDATA)>
+
+    <!ELEMENT contacts (name, phone, email?, site?, facebook?, linkedin?)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT phone (#PCDATA)>
+    <!ELEMENT email (#PCDATA)>
+    <!ELEMENT site (#PCDATA)>
+    <!ELEMENT facebook (#PCDATA)>
+    <!ELEMENT linkedin (#PCDATA)>
+
+    <!ELEMENT UID (#PCDATA)>
+
+    <!ELEMENT description (#PCDATA)>
+
+    <!ELEMENT image EMPTY>
+    <!ATTLIST image href CDATA #REQUIRED>
+
+    <!ELEMENT regions (region+)>
+    <!ELEMENT region (regionName)>
+    <!ATTLIST region region_ID ID #REQUIRED>
+    <!ATTLIST region company_Ref IDREFS #IMPLIED>
+    <!ELEMENT regionName (#PCDATA)>
+
+    <!ELEMENT sectors (sector+)>
+    <!ELEMENT sector (sectorName)>
+    <!ATTLIST sector sector_ID ID #REQUIRED>
+    <!ATTLIST sector company_Ref IDREFS #IMPLIED>
+    <!ELEMENT sectorName (#PCDATA)>
+    <!NOTATION png SYSTEM "image/png">
+
+    <!ENTITY egtdigital SYSTEM "file:///C:/Users/ohliuv/Downloads/Copy_paste/Copy_paste/images/egtdigital.png" NDATA png>
+    <!ENTITY gamelof SYSTEM "file:///C:/Users/ohliuv/Downloads/Copy_paste/Copy_paste/images/gamelof.png" NDATA png>
+    <!ENTITY mobistms SYSTEM "https://en.wikipedia.org/wiki/Cat#/media/File:Wild-domestic-hybrid_cat_skulls.png" NDATA png>
+
+    <!ENTITY icard SYSTEM "images/icard.png" NDATA png>
+    <!ENTITY limechain SYSTEM "images/limechain.png" NDATA png>
+    <!ENTITY lirex SYSTEM "images/lirex.png" NDATA png>
+    <!ENTITY musala SYSTEM "images/musala.png" NDATA png>
+    <!ENTITY paysafe SYSTEM "images/paysafe.png" NDATA png>
+    <!ENTITY sirma SYSTEM "images/sirma.png" NDATA png>
+    <!ENTITY telerik SYSTEM "images/telerik.png" NDATA png>
+    <!ENTITY trading SYSTEM "images/trading212.png" NDATA png>
+]>
