@@ -25,7 +25,7 @@
     <p><strong>Facebook:</strong> <a href="{contacts/facebook}"><xsl:value-of select="contacts/facebook"/></a></p>
     <p><strong>LinkedIn:</strong> <a href="{contacts/linkedin}"><xsl:value-of select="contacts/linkedin"/></a></p>
     <p><strong>Description:</strong> <xsl:value-of select="description"/></p>
-    <img src="{image/@href}" alt="{companyName}"/><xsl:value-of select="image/@href"/>
+    <img src="{image/@href}" alt="{companyName}"/>
   </div>
 </xsl:template>
 

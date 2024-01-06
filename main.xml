@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="C:/Users/ohliuv/Downloads/Copy_paste/main.xsl"?>
+<?xml-stylesheet type="text/xsl" href="C:/Users/ohliuv/Downloads/Copy_paste/xml/main2.xsl"?>
 
 <!DOCTYPE catalogue [
 	<!ELEMENT catalogue (company+)>
@@ -28,7 +28,7 @@
 
     <!ELEMENT image EMPTY>
     <!ATTLIST image href CDATA #REQUIRED>
-    <!-- <!NOTATION png SYSTEM "image/png"> -->
+    <!NOTATION png SYSTEM "image/png">
 
     <!ELEMENT regions (region+)>
     <!ELEMENT region (regionName)>
@@ -42,10 +42,10 @@
     <!ATTLIST sector company_Ref IDREFS #IMPLIED>
     <!ELEMENT sectorName (#PCDATA)>
 
-	<!ENTITY telerik "images/telerik.png">
-    <!ENTITY egtdigital SYSTEM "file:///C:/Users/ohliuv/Downloads/Copy_paste/images/egtdigital.png" NDATA png>
+	<!ENTITY telerik "https://raw.githubusercontent.com/ilker-raimov/xml/main/images/telerik.png">
+    <!ENTITY egtdigital SYSTEM "file///C:/Users/ohliuv/Downloads/Copy_paste/images/egtdigital.png" NDATA png>
     <!ENTITY gamelof SYSTEM "file:///C:/Users/ohliuv/Downloads/Copy_paste/images/gamelof.png" NDATA png>
-    <!ENTITY mobistms "https://en.wikipedia.org/wiki/Cat#/media/File:Wild-domestic-hybrid_cat_skulls.png">
+    <!ENTITY mobistms SYSTEM "file:///C:/Users/ohliuv/Downloads/Copy_paste/images/mobistems.png" NDATA png>
 
     <!ENTITY icard SYSTEM "images/icard.png" NDATA png>
     <!ENTITY limechain SYSTEM "images/limechain.png" NDATA png>
@@ -76,7 +76,7 @@
 		<description>
 			Училищна Телерик Академия е национална образователна програма на Фондация „Телерик Академия“, която подготвя учениците от 1 до 12 клас за професиите на дигиталното бъдеще. 
 		</description>
-		<image src="&telerik;" alt="werfwef"/>
+		<image href="&telerik;" alt="werfwef"/>
 	
 	</company>
 
@@ -101,7 +101,7 @@
 
 			It is a Google Play Editor's Choice, and the top app in the business category with over 350,000 reviews. OfficeSuite is also PC Magazine's Editor's Choice and InfoWorld's Best Office App for Android. MobiSystems was founded in 2001 and is entirely privately held.
 		</description>
-		<image href="&mobistms;"/>
+		<image href="mobistms"/>
 	</company>
 	
 
