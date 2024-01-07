@@ -42,18 +42,17 @@
     <!ATTLIST sector company_Ref IDREFS #IMPLIED>
     <!ELEMENT sectorName (#PCDATA)>
 
-	<!ENTITY telerik "https://raw.githubusercontent.com/ilker-raimov/xml/main/Telerik-Academy.jpg">
+	<!ENTITY telerik "https://raw.githubusercontent.com/ilker-raimov/xml/main/images/telerik.jpg">
     <!ENTITY egtdigital "https://raw.githubusercontent.com/ilker-raimov/xml/main/images/egtdigital.png">
-    <!ENTITY gameloft "https://raw.githubusercontent.com/ilker-raimov/xml/main/images/gamelof.jpg">
+    <!ENTITY gameloft "https://raw.githubusercontent.com/ilker-raimov/xml/main/images/gameloft.jpg">
     <!ENTITY mobisystems "https://raw.githubusercontent.com/ilker-raimov/xml/main/images/mobistems.png">
-
-    <!ENTITY icard SYSTEM "images/icard.png" NDATA png>
-    <!ENTITY limechain SYSTEM "images/limechain.png" NDATA png>
-    <!ENTITY lirex SYSTEM "images/lirex.png" NDATA png>
-    <!ENTITY musala SYSTEM "images/musala.png" NDATA png>
-    <!ENTITY paysafe SYSTEM "images/paysafe.png" NDATA png>
-    <!ENTITY sirma SYSTEM "images/sirma.png" NDATA png>
-    <!ENTITY trading SYSTEM "images/trading212.png" NDATA png>
+    <!ENTITY icard "https://raw.githubusercontent.com/ilker-raimov/xml/main/images/icard.png">
+    <!ENTITY limechain "https://raw.githubusercontent.com/ilker-raimov/xml/main/images/limechain.png">
+    <!ENTITY lirex "https://raw.githubusercontent.com/ilker-raimov/xml/main/images/lirex.jpg">
+    <!ENTITY musala "https://raw.githubusercontent.com/ilker-raimov/xml/main/images/musala.jpg">
+    <!ENTITY paysafe "https://raw.githubusercontent.com/ilker-raimov/xml/main/images/paysafe.png">
+    <!ENTITY sirma "https://raw.githubusercontent.com/ilker-raimov/xml/main/images/sirma.png">
+    <!ENTITY trading "https://raw.githubusercontent.com/ilker-raimov/xml/main/images/trading212.png">
 ]>
 
 <companies>
@@ -147,7 +146,7 @@
 			<description>
 				Musala Soft, part of Qinshift, is a leading software engineering services company, specialized in complex and large-scale software projects, IT consulting and solution implementation with 700+ professionals from 10+ nationalities.
 			</description>
-			<image href="musala"/>
+			<image href="&musala;"/>
 	</company>
 	
 	<company company_ID = "LIREX NET" region_Ref="RU" sector_Ref="web">
@@ -162,7 +161,7 @@
 			<description>
 				ПРЕДОСТАВЯНЕ НА ИНФОРМАЦИОННИ УСЛУГИ, В Т.Ч. ДОСТЪП ДО ИНТЕРНЕТ, ПРОЕКТИРАНЕ, ИЗГРАЖДАНЕ И ПОДДРЪЖКА НА КОМПЮТЪРНИ КОМУНИКАЦИОННИ СИСТЕМИ. 
 			</description>
-			<image href="lirex"/>
+			<image href="&lirex;"/>
 	</company>
 
 
@@ -183,7 +182,7 @@
             <description>
                 Paysafe (“Paysafe”) (NYSE: PSFE) (PSFE.WS) is a leading payments platform, enabling businesses and consumers to connect and transact seamlessly through industry-leading capabilities in payment processing, digital wallet, and online cash solutions.
             </description>
-            <image href="paysafe"/>
+            <image href="&paysafe;"/>
     </company>
 
 	<company company_ID = "iCard" region_Ref="S" sector_Ref="software">
@@ -203,7 +202,7 @@
             <description>
                 iCard е Финтех компания и водеща институция за електронни пари, член на MasterCard, VISA, UnionPay, JCB и други картови организации, оперираща в цяла Европа. Компанията предлага дигитални финансови решения, определящи тенденциите в глобален аспект.
             </description>
-            <image href="icard"/>
+            <image href="&icard;"/>
     </company>
 
 	<company company_ID = "Limechain" region_Ref="S" sector_Ref="web">
@@ -223,7 +222,7 @@
             <description>
                 LimeChain is a blockchain development and consulting studio. We provide a wide range of services such as decentralized application development; public and private blockchain development; Smart contract development and audits; ICO and crowd sale
             </description>
-            <image href="limechain"/>
+            <image href="&limechain;"/>
     </company>
 
 	<company company_ID = "Trading 212" region_Ref="S" sector_Ref="nz">
@@ -249,7 +248,7 @@
 
                 Today we are expanding our world-class teams to fuel our global expansion and innovate in areas such as quant trading, crypto, social investing, extreme scalability and data science.
             </description>
-            <image href="trading"/>
+            <image href="&trading;"/>
     </company>
 	<company company_ID = "SirmaSolutions" region_Ref="S" sector_Ref="software">
             <companyName> СИРМА СОЛЮШЪНС АД </companyName>
@@ -268,7 +267,7 @@
             <description>
                 Sirma Solutions is part of Sirma Group, the biggest Bulgarian software holding with professionals from all around the world. We have more than 30 years market presence and continue to grow and deliver valuable products world-wide.
             </description>
-            <image href="sirma"/>
+            <image href="&sirma;"/>
     </company>	
 
 	<company company_ID = "Gameloft" region_Ref="S" sector_Ref="software">
