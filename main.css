@@ -51,6 +51,11 @@ p.company {
     font-family: monaco, Consolas, "Lucida Console", monospace;
 }
 
+a.company {
+    overflow: none;
+    word-wrap: break-word;
+}
+
 img.company {
     width: 100%;
     height: auto;

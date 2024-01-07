@@ -29,12 +29,14 @@
           <strong>
             CEO:
           </strong>
+          <br/>
           <xsl:value-of select="ceo"/>
         </p>
         <p class="company">
           <strong>
             Address:
           </strong>
+          <br/>
           <xsl:value-of select="address/city"/>
           <xsl:if test="address/street">
             <br/>
@@ -45,13 +47,15 @@
           <strong>
             Email:
           </strong>
+          <br/>
           <xsl:value-of select="contacts/email"/>
         </p>
         <p class="company">
           <strong>
             Website:
           </strong>
-          <a href="{contacts/site}">
+          <br/>
+          <a href="{contacts/site}" class="company">
             <xsl:value-of select="contacts/site"/>
           </a>
         </p>
@@ -59,7 +63,8 @@
           <strong>
             Facebook:
           </strong>
-          <a href="{contacts/facebook}">
+          <br/>
+          <a href="{contacts/facebook}" class="company">
             <xsl:value-of select="contacts/facebook"/>
           </a>
         </p>
@@ -67,7 +72,8 @@
           <strong>
             LinkedIn:
           </strong>
-          <a href="{contacts/linkedin}">
+          <br/>
+          <a href="{contacts/linkedin}" class="company">
             <xsl:value-of select="contacts/linkedin"/>
           </a>
         </p>
@@ -75,6 +81,7 @@
           <strong>
              Description:
           </strong>
+          <br/>
          <xsl:value-of select="description"/>
         </p>
       </div>
