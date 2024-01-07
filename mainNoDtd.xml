@@ -1,118 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="C:/Users/ohliuv/Downloads/Copy_paste/xml/main2.xsl"?>
 
-<!DOCTYPE companies[
-	<!ENTITY telerik "https://raw.githubusercontent.com/ilker-raimov/xml/main/images/telerik.jpg">
-    <!ENTITY egtdigital "https://raw.githubusercontent.com/ilker-raimov/xml/main/images/egtdigital.png">
-    <!ENTITY gameloft "https://raw.githubusercontent.com/ilker-raimov/xml/main/images/gameloft.jpg">
-    <!ENTITY mobisystems "https://raw.githubusercontent.com/ilker-raimov/xml/main/images/mobisystems.png">
-    <!ENTITY icard "https://raw.githubusercontent.com/ilker-raimov/xml/main/images/icard.png">
-    <!ENTITY limechain "https://raw.githubusercontent.com/ilker-raimov/xml/main/images/limechain.png">
-    <!ENTITY lirex "https://raw.githubusercontent.com/ilker-raimov/xml/main/images/lirex.jpg">
-    <!ENTITY musala "https://raw.githubusercontent.com/ilker-raimov/xml/main/images/musala.jpg">
-    <!ENTITY paysafe "https://raw.githubusercontent.com/ilker-raimov/xml/main/images/paysafe.png">
-    <!ENTITY sirma "https://raw.githubusercontent.com/ilker-raimov/xml/main/images/sirma.png">
-    <!ENTITY trading "https://raw.githubusercontent.com/ilker-raimov/xml/main/images/trading212.png">
-    <!ENTITY balkan "images/telerik.png">
-
-	<!ELEMENT companies (regions, sectors, company+)>
-    
-    <!ELEMENT regions (region+)>
-    <!ELEMENT region (regionName)>
-    <!ATTLIST region
-        region_REF CDATA #REQUIRED
-        company_ID CDATA #REQUIRED
-    >
-    
-    <!ELEMENT regionName (#PCDATA)>
-    
-    <!ELEMENT sectors (sector+)>
-    <!ELEMENT sector (sectorName)>
-    <!ATTLIST sector
-        sector_Ref CDATA #REQUIRED
-        company_ID CDATA #REQUIRED
-    >
-    
-    <!ELEMENT sectorName (#PCDATA)>
-    
-    <!ELEMENT company (
-        companyName,
-        addresses,
-        ceo,
-        contacts,
-        UID,
-        description,
-        image
-    )>
-    <!ATTLIST company
-        company_ID CDATA #REQUIRED
-        region_REF CDATA #REQUIRED
-        sector_Ref CDATA #REQUIRED
-    >
-
-    <!ELEMENT companyName (#PCDATA)>
-    
-    <!ELEMENT addresses (address+)>
-    <!ELEMENT address (city, street)>
-    
-    <!ELEMENT city (#PCDATA)>
-    <!ELEMENT street (#PCDATA)>
-    
-    <!ELEMENT ceo (#PCDATA)>
-    
-    <!ELEMENT contacts (name, phone, email, site, facebook, linkedIn)>
-    <!ELEMENT name (#PCDATA)>
-    <!ELEMENT phone (#PCDATA)>
-    <!ELEMENT email (#PCDATA)>
-    <!ELEMENT site (#PCDATA)>
-    <!ELEMENT facebook (#PCDATA)>
-    <!ELEMENT linkedIn (#PCDATA)>
-    
-    <!ELEMENT UID (#PCDATA)>
-    
-    <!ELEMENT description (#PCDATA)>
-    
-    <!ELEMENT image (#PCDATA)>
-    <!ATTLIST image
-        href CDATA #REQUIRED
-    >
-]>
-
 <companies>
 	<regions>
 		<region region_REF="SA" company_ID ="TelericAcademy Mobisystems EGTDigital Balkan">
-			<regionName> София </regionName>
+			<regionName>София</regionName>
 		</region>
 		<region region_REF="S" company_ID ="Musala LIREXNET Paysafe SirmaSolutions Gameloft Limechain">
-			<regionName> Софийска област </regionName>
+			<regionName>Софийска област</regionName>
 		</region>
 		<region region_REF="V" company_ID ="iCard">
-			<regionName> Варна </regionName>
+			<regionName>Варна</regionName>
 		</region>
 
 	</regions>
 
 	<sectors>
 		<sector sector_Ref= "software" company_ID = "TelericAcademy Paysafe SirmaSolutions Gameloft">
-			<sectorName> Софтуер </sectorName>
+			<sectorName>Софтуер</sectorName>
 		</sector>
 		<sector sector_Ref= "hardware" company_ID = "Balkan">
-			<sectorName> Хардуер </sectorName>
+			<sectorName>Хардуер</sectorName>
 		</sector>
 		<sector sector_Ref= "web" company_ID = "Musala EGTDigital LIREXNET Limechain">
-			<sectorName> Уеб </sectorName>
+			<sectorName>Уеб</sectorName>
 		</sector>
 		<sector sector_Ref = "fin-tech" company_ID = "iCard Trading212">
-			<sectorName> Фин-тек </sectorName>
+			<sectorName>Фин-тек</sectorName>
 		</sector>
 	</sectors>
 
 	<company company_ID = "TelericAcademy" region_REF="S" sector_Ref="software">
-		<companyName> Telerik Academy </companyName>
+		<companyName>Telerik Academy</companyName>
 		<addresses>
 			<address>
-				<city> София </city>
-				<street> бул. „Александър Малинов“ 31, 1729 ж.к. Младост 1А, София </street>
+				<city>София</city>
+				<street>бул. „Александър Малинов“ 31, ж.к. Младост 1А, 1729</street>
 			</address>
 		</addresses>
 		<ceo>Александра Мечкова</ceo>
@@ -128,30 +51,27 @@
 		<description>
 			Училищна Телерик Академия е национална образователна програма на Фондация „Телерик Академия“, която подготвя учениците от 1 до 12 клас за професиите на дигиталното бъдеще. 
 		</description>
-		<image href="&telerik;"/>
+		<image href="https://raw.githubusercontent.com/ilker-raimov/xml/main/images/telerik.jpg"/>
 	</company>
 
 	<company company_ID = "Mobisystems" region_REF="S" sector_Ref="software"> 
-		<companyName> Mobile Systems Ltd </companyName>
+		<companyName>Mobile Systems Ltd.</companyName>
 		<addresses>
 			<address>
-				<city> София </city>
-				<street> Моби Арт Билдинг
-						Сребърна 2В,
-						София 1407
+				<city>София</city>
+				<street>
+					Моби Арт Билдинг, ул. "Сребърна 2В", 1407
 				</street>
 			</address>
 			<address>
-				<city> Сан Диего </city>
-				<street> MobiSystems, Inc.
-						4501 Mission Bay Drive, Suite 3A
-						San Diego, CA 92109, USA
+				<city>Сан Диего</city>
+				<street>4501 Mission Bay Drive, Suite 3A, CA 92109, USA
 				</street>	
 			</address>
 		</addresses>
 		<ceo>Станислав Минчев</ceo>
 		<contacts>
-			<name> Ilina Gesheva </name>
+			<name>Илина Гешева</name>
 			<phone>0877089533</phone>
 			<email>privacy@mobisystems.com</email>
 			<site>http://www.mobisystems.com/</site>
@@ -164,20 +84,20 @@
 			As the developer of the award winning mobile app OfficeSuite, MobiSystems serves over 500 million individual and enterprise users in 195 countries. OfficeSuite leads app downloads and ratings in Google Play, Amazon App Store and Samsung Apps, as well as Apple's App Store.
 			It is a Google Play Editor's Choice, and the top app in the business category with over 350,000 reviews. OfficeSuite is also PC Magazine's Editor's Choice and InfoWorld's Best Office App for Android. MobiSystems was founded in 2001 and is entirely privately held.
 		</description>
-		<image href="&mobisystems;"/>
+		<image href="https://raw.githubusercontent.com/ilker-raimov/xml/main/images/mobisystems.png"/>
 	</company>
 	
 	<company company_ID = "EGTDigital" region_REF="S" sector_Ref="web">
-			<companyName> EGT DIGITAL LTD </companyName>
+			<companyName>EGT DIGITAL LTD</companyName>
 			<addresses>
 				<address>
-					<city> София </city>
-					<street> ул. "Панорама София" № 6, Бизнес център "RichHill" </street>
+					<city>София</city>
+					<street>ул. "Панорама София" № 6, Бизнес център "RichHill"</street>
 				</address>
 			</addresses>
-			<ceo> Владимир Доков </ceo>
+			<ceo>Владимир Доков</ceo>
 			<contacts>
-				<name>Gergana Georgieva </name>
+				<name>Гергана Георгиева</name>
 				<phone>+359 2 890 2429</phone>
 				<email>support@wdesigns.eu</email>
 				<site>https://egt-digital.com/</site>
@@ -188,35 +108,32 @@
 			<description>
 				EGT Digital is a next-generation tech company, which is fully focused on B2B iGaming solutions. 
 			</description>
-			<image href="&egtdigital;"/>
+			<image href="https://raw.githubusercontent.com/ilker-raimov/xml/main/images/egtdigital.png"/>
 	</company>
 
 	<company company_ID = "Musala" region_REF="S" sector_Ref="web">
-			<companyName> MUSALA SOFT EAD </companyName>
+			<companyName>Musala Soft EAD</companyName>
 			<addresses>
 				<address>
-					<city> София </city>
-					<street>Sofia
-							World Trade Center
-							36, Dragan Tsankov blvd.
-					</street>
+					<city>София</city>
+					<street>бул. "Драган Цанков" 36, World Trade Center</street>
 				</address>
 				<address>
-					<city> Skopje </city>
-					<street> Soravia Center, 3 Filip II Makedonski Str. </street>
+					<city>Скопие</city>
+					<street>Soravia Center, ул. "Филип II Македонски"</street>
 				</address>
 				<address>
-					<city> BURGAS </city>
-					<street> 3 Adam Mickiewicz str., office 5 </street>
+					<city>Бургас</city>
+					<street>3 "Adam Mickiewicz" str., office 5</street>
 				</address>
 				<address>
-					<city> Ruse </city>
-					<street> 1 Aleksandrovska str., entrance 2, floor 2 </street>
+					<city>Русе</city>
+					<street>ул. "Александровска" 1, вх. Б, ет. 2</street>
 				</address>
 			</addresses>
-			<ceo>Delyan Lilov </ceo>
+			<ceo>Делян Лилов</ceo>
 			<contacts>
-				<name>Desislava Kostadinova </name>
+				<name>Десислава Костадинова</name>
 				<phone>+359 (2) 969 58 21</phone>
 				<email>musala@musala.com</email>
 				<site>https://www.musala.com/</site>
@@ -227,20 +144,20 @@
 			<description>
 				Musala Soft, part of Qinshift, is a leading software engineering services company, specialized in complex and large-scale software projects, IT consulting and solution implementation with 700+ professionals from 10+ nationalities.
 			</description>
-			<image href="&musala;"/>
+			<image href="https://raw.githubusercontent.com/ilker-raimov/xml/main/images/musala.jpg"/>
 	</company>
 	
 	<company company_ID = "LIREXNET" region_REF="SA" sector_Ref="web">
-			<companyName>ЛИРЕКС НЕТ ЕООД </companyName>
+			<companyName>Лирекс Нет ЕООД</companyName>
 			<addresses>
 				<address>
-					<city> Софиа </city>
-					<street> р-н Младост, бл. 54, вх. 1, ет. 1 </street>
+					<city>София</city>
+					<street>р-н "Младост", бл. 54, вх. 1, ет. 1</street>
 				</address>
 			</addresses>
-			<ceo> СВЕТОСЛАВ ГЕОРГИЕВ ХРИСТОВ </ceo>
+			<ceo>Светослав Георгиев Христов</ceo>
 			<contacts>
-				<name> Ivan Sirakov </name>
+				<name>Иван Сираков</name>
 				<phone>+359 2 9 691 691</phone>
 				<email>office@lirex.com</email>
 				<site>https://lirex.com/en/</site>
@@ -249,23 +166,23 @@
 			</contacts>
 			<UID>130422040</UID>
 			<description>
-				ПРЕДОСТАВЯНЕ НА ИНФОРМАЦИОННИ УСЛУГИ, В Т.Ч. ДОСТЪП ДО ИНТЕРНЕТ, ПРОЕКТИРАНЕ, ИЗГРАЖДАНЕ И ПОДДРЪЖКА НА КОМПЮТЪРНИ КОМУНИКАЦИОННИ СИСТЕМИ. 
+				Предоставяне на информационни услуги, в т.ч. достъп до интернет, проектиране, изграждане и поддръжка на комптърни комуникационни системи. 
 			</description>
-			<image href="&lirex;"/>
+			<image href="https://raw.githubusercontent.com/ilker-raimov/xml/main/images/lirex.jpg"/>
 	</company>
 
 
 	<company company_ID = "Paysafe" region_REF="S" sector_Ref="software">
-            <companyName> Paysafe Bulgaria EOOD </companyName>
+            <companyName>Paysafe Bulgaria EOOD</companyName>
 			<addresses>
 				<address>
-					<city> София </city>
-					<street> Tsarigradsko Shose 90, Capital Fort </street>
+					<city>София</city>
+					<street>бул. "Цариградско Шосе" 90, Capital Fort</street>
 				</address>
 			</addresses>
             <ceo>Димитър Георгиeв Мърджев</ceo>
             <contacts>
-				<name>Petya Voynova </name>
+				<name>Петя Войнова</name>
                 <phone>0877089533</phone>
                 <email>uk.customerservice@paysafe.com</email>
                 <site>https://www.paysafe.com/</site>
@@ -274,22 +191,22 @@
             </contacts>
             <UID>175274614</UID>
             <description>
-                Paysafe (“Paysafe”) (NYSE: PSFE) (PSFE.WS) is a leading payments platform, enabling businesses and consumers to connect and transact seamlessly through industry-leading capabilities in payment processing, digital wallet, and online cash solutions.
+                Paysafe is a leading payments platform, enabling businesses and consumers to connect and transact seamlessly through industry-leading capabilities in payment processing, digital wallet, and online cash solutions.
             </description>
-            <image href="&paysafe;"/>
+            <image href="https://raw.githubusercontent.com/ilker-raimov/xml/main/images/paysafe.png"/>
     </company>
 
 	<company company_ID = "iCard" region_REF="V" sector_Ref="fin-tech">
-            <companyName> Айкарт АД </companyName>
+            <companyName>Айкарт АД</companyName>
 			<addresses>
 				<address>
-					<city> Варна </city>
-					<street> Business Park Varna, Building B1, 9009 Zapad, Varna </street>
+					<city>Варна</city>
+					<street>Business Park Varna, Building B1, 9009 Zapad</street>
 				</address>
 			</addresses>
             <ceo>Явор Петров</ceo>
             <contacts>
-				<name> Bozhidar Blagoev</name>
+				<name>Божидар Благоев</name>
                 <phone>088 922 9001</phone>
                 <email>support@icard.com</email>
                 <site>https://careers.icard.com/</site>
@@ -298,22 +215,22 @@
             </contacts>
             <UID>175274614</UID>
             <description>
-                iCard е Финтех компания и водеща институция за електронни пари, член на MasterCard, VISA, UnionPay, JCB и други картови организации, оперираща в цяла Европа. Компанията предлага дигитални финансови решения, определящи тенденциите в глобален аспект.
+                iCard е финтех компания и водеща институция за електронни пари, член на MasterCard, VISA, UnionPay, JCB и други картови организации, оперираща в цяла Европа. Компанията предлага дигитални финансови решения, определящи тенденциите в глобален аспект.
             </description>
-            <image href="&icard;"/>
+            <image href="https://raw.githubusercontent.com/ilker-raimov/xml/main/images/icard.png"/>
     </company>
 
 	<company company_ID = "Limechain" region_REF="S" sector_Ref="web">
-            <companyName> Лайм Лабс ООД </companyName>
+            <companyName>Лайм Лабс ООД</companyName>
 			<addresses>
 				<address>
-					<city> София </city>
-					<street> “Tetrix” Business Center</street>
+					<city>София</city>
+					<street>“Tetrix” Business Center</street>
 				</address>
 			</addresses>
             <ceo>Николай Тодоров</ceo>
             <contacts>
-				<name>Mariyana Georgieva</name>
+				<name>Марияна Георгиева</name>
                 <phone>+359 889 438 478</phone>
                 <email>hi@limechain.tech</email>
                 <site>https://limechain.tech/</site>
@@ -324,20 +241,20 @@
             <description>
                 LimeChain is a blockchain development and consulting studio. We provide a wide range of services such as decentralized application development; public and private blockchain development; Smart contract development and audits; ICO and crowd sale
             </description>
-            <image href="limechain"/>
+            <image href="https://raw.githubusercontent.com/ilker-raimov/xml/main/images/limechain.png"/>
     </company>
 
 	<company company_ID = "Trading212" region_REF="S" sector_Ref="fin-tech">
-            <companyName> Trading 212 EOOD </companyName>
+            <companyName>Trading 212 EOOD</companyName>
 			<addresses>
 				<address>
-					<city> София </city>
-					<street> ул. Лъчезар Станчев 3, ет. 10 </street>
+					<city>София</city>
+					<street>ул. "Лъчезар Станчев" 3, ет. 10 </street>
 				</address>
 			</addresses>
             <ceo>Борислав Недялков</ceo>
             <contacts>
-				<name>Petya Dimitrova</name>
+				<name>Петя Димитрова</name>
                 <phone>+359 800 46049</phone>
                 <email>info@trading212.com</email>
                 <site>http://www.trading212.com/</site>
@@ -347,26 +264,22 @@
             <UID>201659500</UID>
             <description>
                 Trading 212 was founded in 2003 with one simple idea - to make the financial markets accessible to everyone. From day one, we've been focused on building a great user experience through advanced technology.
-
-
                 From the first truly dynamic web apps, to the mobile revolution, we've been at the forefront of every technological wave with the sole purpose of democratising the financial markets. Software engineering and product design are at the heart of what we do.
-
-
                 Today we are expanding our world-class teams to fuel our global expansion and innovate in areas such as quant trading, crypto, social investing, extreme scalability and data science.
             </description>
-            <image href="&trading;"/>
+            <image href="https://raw.githubusercontent.com/ilker-raimov/xml/main/images/trading212.png"/>
     </company>
 	<company company_ID = "SirmaSolutions" region_REF="S" sector_Ref="software">
-            <companyName> СИРМА СОЛЮШЪНС АД </companyName>
+            <companyName>Сирма Солюшънс АД</companyName>
 			<addresses>
 				<address>
-					<city> София </city>
-					<street>135 Tsarigradsko shosse Blvd., Fl. 3</street>
+					<city>София</city>
+					<street>бул. "Цариградско Шосе" 135, ет. 3</street>
 				</address>
 			</addresses>
             <ceo>Цветан Алексиев</ceo>
             <contacts>
-				<name>Georgi Georgiev </name>
+				<name>Георги Георгиев</name>
                 <phone>029768310</phone>
                 <email>office@sirma.bg</email>
                 <site>https://sirmasolutions.com/</site>
@@ -377,20 +290,20 @@
             <description>
                 Sirma Solutions is part of Sirma Group, the biggest Bulgarian software holding with professionals from all around the world. We have more than 30 years market presence and continue to grow and deliver valuable products world-wide.
             </description>
-            <image href="&sirma;"/>
+            <image href="https://raw.githubusercontent.com/ilker-raimov/xml/main/images/sirma.png"/>
     </company>	
 
 	<company company_ID = "Gameloft" region_REF="S" sector_Ref="software">
-            <companyName> Геймлофт България ЕООД </companyName>
+            <companyName>Геймлофт България ЕООД</companyName>
 			<addresses>
 				<address>
-					<city> София </city>
-					<street> "Aleksandar Stamboliyski" Blvd 101А, 1202 Zona B-5, Sofia </street>
+					<city>София</city>
+					<street>бул. "Александър Стамболийски" 101А, Зона B-5, 1202</street>
 				</address>
 			</addresses>
             <ceo>Кръстан Бахъров</ceo>
             <contacts>
-				<name>Preslava Dimitrova </name>
+				<name>Преслава Димитрова</name>
 				<phone>1-800-910-3186</phone>
 				<email>support@gameloft.com </email>
                 <site>https://www.gameloft.com/gameloft-studios/sofia</site>
@@ -401,19 +314,19 @@
             <description>
                 Лидер в разработването и публикуването на игри за всички дигитални платформи. Всеки месец 70 милиона уникални потребители могат да бъдат достигнати от рекламодателите в игрите на Gameloft.
             </description>
-            <image href="&gameloft;"/>
+            <image href="https://raw.githubusercontent.com/ilker-raimov/xml/main/images/gameloft.jpg"/>
     </company>
 	<company company_ID="Balkan" region_REF="SA" sector_Ref="hardware">
-		<companyName>БАЛКАН СЪРВИСИС ООД </companyName>
+		<companyName>Балкан Сървисис ООД</companyName>
 		<addresses>
 			<address>
-				<city> София </city>
-				<street> ул. Екзарх Йосиф 31 ет. 3 </street>
+				<city>София</city>
+				<street>ул. "Екзарх Йосиф" 31, ет. 3</street>
 			</address>
 		</addresses>
-		<ceo>Vladimir Rashev</ceo>
+		<ceo>Владимир Рашев</ceo>
 		<contacts>
-			<name>Boqna Dimova </name>
+			<name>Бояна Димова</name>
 			<phone>+359 2 980 95 99</phone>
 			<email>info@balkanservices.com </email>
 			<site>https://www.balkanservices.com/</site>
@@ -424,6 +337,6 @@
             <description>
                 Balkan Services е консултантска IT компания, която помага на утвърдени организации да изберат точното за тях софтуерно решение и да го внедрят възможно най-бързо, ефективно и гладко. Ние сме доверен партньор за дигитализация на над 360 + организации и официален партньор на водещи международни софтуерни компании като Qlik, Oracle NetSuite, LucaNet AG, AMANA, SoftOne Technologies, Microsoft. 
             </description>
-            <image href="&balkan;"/>
+            <image href="https://raw.githubusercontent.com/ilker-raimov/xml/main/images/balkan.png"/>
 	</company>
 </companies>

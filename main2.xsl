@@ -2,16 +2,18 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
   <xsl:template match="/">
-    <html>
-      <head>
-        <title>Companies Information</title>
-        <link href="main.css" rel="stylesheet" type="text/css" />
-      </head>
-      <body>
-        <p class="title" >Companies Information</p>
-        <xsl:apply-templates select="companies/company"/>
-      </body>
-    </html>
+    <fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
+      <html>
+        <head>
+          <title>Companies Information</title>
+          <link href="main.css" rel="stylesheet" type="text/css" />
+        </head>
+        <body>
+          <p class="title" >Companies Information</p>
+          <xsl:apply-templates select="companies/company"/>
+        </body>
+      </html>
+    </fo:root>
   </xsl:template>
 
   <xsl:template match="company">
@@ -36,12 +38,21 @@
           <strong>
             Address:
           </strong>
+          <xsl:apply-templates select="addresses/address"/>
+        </p>
+        <p class="company">
+          <strong>
+            HR:
+          </strong>
           <br/>
-          <xsl:value-of select="address/city"/>
-          <xsl:if test="address/street">
-            <br/>
-            <xsl:value-of select="address/street"/>
-          </xsl:if>
+          <xsl:value-of select="contacts/name"/>
+        </p>
+        <p class="company">
+          <strong>
+            Phone:
+          </strong>
+          <br/>
+          <xsl:value-of select="contacts/phone"/>
         </p>
         <p class="company">
           <strong>
@@ -74,7 +85,7 @@
           </strong>
           <br/>
           <a href="{contacts/linkedin}" class="company">
-            <xsl:value-of select="contacts/linkedin"/>
+            <xsl:value-of select="contacts/linkedIn"/>
           </a>
         </p>
         <p class="company">
@@ -86,6 +97,11 @@
         </p>
       </div>
     </div>
+  </xsl:template>
+
+  <xsl:template match="address">
+    <br/>
+    <xsl:value-of select="city"/> - <xsl:value-of select="street"/>
   </xsl:template>
 
 </xsl:stylesheet>
