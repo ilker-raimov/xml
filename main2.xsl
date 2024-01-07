@@ -16,14 +16,15 @@
 
   <xsl:template match="company">
     <div class="company">
+      <p class="companyTitle">
+          <xsl:value-of select="companyName"/>
+      </p>
+      <hr class="company"/>
       <div class="companyColumn">
         <img src="{image/@href}" class="company"/>
       </div>
       <div class="companyColumn">
-        <p class="companyTitle">
-          <xsl:value-of select="companyName"/>
-        </p>
-        <hr class="company"/>
+        
         <p class="company">
           CEO: <xsl:value-of select="ceo"/>
         </p>
