@@ -45,7 +45,7 @@
 	<!ENTITY telerik "https://raw.githubusercontent.com/ilker-raimov/xml/main/images/telerik.jpg">
     <!ENTITY egtdigital "https://raw.githubusercontent.com/ilker-raimov/xml/main/images/egtdigital.png">
     <!ENTITY gameloft "https://raw.githubusercontent.com/ilker-raimov/xml/main/images/gameloft.jpg">
-    <!ENTITY mobisystems "https://raw.githubusercontent.com/ilker-raimov/xml/main/images/mobistems.png">
+    <!ENTITY mobisystems "https://raw.githubusercontent.com/ilker-raimov/xml/main/images/mobisystems.png">
     <!ENTITY icard "https://raw.githubusercontent.com/ilker-raimov/xml/main/images/icard.png">
     <!ENTITY limechain "https://raw.githubusercontent.com/ilker-raimov/xml/main/images/limechain.png">
     <!ENTITY lirex "https://raw.githubusercontent.com/ilker-raimov/xml/main/images/lirex.jpg">
@@ -80,7 +80,7 @@
 	</company>
 
 	<company company_ID = "Mobisystems" region_Ref="S" sector_Ref="software">
-		<companyName> Mobile Systems Ltd </companyName>
+		<companyName> Mobile Systems Ltd. </companyName>
 		<address>
 			<city> София </city>
 		</address>
@@ -105,7 +105,7 @@
 	
 
 	<company company_ID = "EGT Digital" region_Ref="S" sector_Ref="web">
-			<companyName> EGT DIGITAL LTD </companyName>
+			<companyName> EGT DIGITAL Ltd. </companyName>
 			<address>
 				<city> гр. София, ул. "Панорама София" № 6, Бизнес център "RichHill" </city>
 			</address>

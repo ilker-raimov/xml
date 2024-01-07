@@ -26,38 +26,56 @@
       <div class="companyColumn">
         
         <p class="company">
-          CEO: <xsl:value-of select="ceo"/>
+          <strong>
+            CEO:
+          </strong>
+          <xsl:value-of select="ceo"/>
         </p>
         <p class="company">
-          Address: <xsl:value-of select="address/city"/>
+          <strong>
+            Address:
+          </strong>
+          <xsl:value-of select="address/city"/>
           <xsl:if test="address/street">
             <br/>
             <xsl:value-of select="address/street"/>
           </xsl:if>
         </p>
         <p class="company">
-          Contact Email: <xsl:value-of select="contacts/email"/>
+          <strong>
+            Email:
+          </strong>
+          <xsl:value-of select="contacts/email"/>
         </p>
         <p class="company">
-          Website:
+          <strong>
+            Website:
+          </strong>
           <a href="{contacts/site}">
             <xsl:value-of select="contacts/site"/>
           </a>
         </p>
         <p class="company">
-          Facebook:
+          <strong>
+            Facebook:
+          </strong>
           <a href="{contacts/facebook}">
             <xsl:value-of select="contacts/facebook"/>
           </a>
         </p>
         <p class="company">
-          LinkedIn:
+          <strong>
+            LinkedIn:
+          </strong>
           <a href="{contacts/linkedin}">
             <xsl:value-of select="contacts/linkedin"/>
           </a>
         </p>
         <p class="company">
-          Description:<xsl:value-of select="description"/>
+          <strong>
+             Description:
+          </strong>
+         <xsl:value-of select="description"/>
         </p>
       </div>
     </div>

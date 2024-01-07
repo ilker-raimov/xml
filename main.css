@@ -17,7 +17,6 @@ div.company {
     border: 2px solid #000;
     display: flex;
     flex-wrap: wrap;
-    background-color: lightgrey;
 }
 
 div.companyColumn {
@@ -31,8 +30,10 @@ div.companyColumn {
 p.title {
     width: 100%;
     font-size: 6vh;
+    margin-top: 2%;
     font-weight: bold;
     text-align: center;
+    font-family: monaco, Consolas, "Lucida Console", monospace;
 }
 
 p.companyTitle {
@@ -41,12 +42,13 @@ p.companyTitle {
     font-size: 5vh;
     font-weight: bold;
     text-align: center;
+    font-family: monaco, Consolas, "Lucida Console", monospace;
 }
 p.company {
     width: 100%;
     margin: 1%;
     font-size: 150%;
-
+    font-family: monaco, Consolas, "Lucida Console", monospace;
 }
 
 img.company {
